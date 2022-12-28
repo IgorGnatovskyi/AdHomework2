@@ -34,12 +34,13 @@ console.log("Pair number :" ,boolianSum);
 
 //Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.//
 
-const restSum = 500 - totalPrice;
+const cash = 500
+const restSum = cash - totalPrice;
 console.log("Rest : ",restSum);
 
 //Виведіть середнє значення цін, округлене до другого знаку після коми//
 
-const mediumPrice =((battery + charger + inverter)/3).toFixed(2);
+const mediumPrice =((totalPrice)/3).toFixed(2);
 console.log("Price medium :" ,mediumPrice);
 
 //(Більш складне) Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).//
