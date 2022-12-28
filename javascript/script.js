@@ -50,7 +50,7 @@ console.log("Rendom discount :" ,discount);
 
 //Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.//
 
-console.log("Discount price :" ,(totalPrice - discount).toFixed(2));
+console.log("Discount price :" ,(totalPrice - (totalPrice / 100 * discount)).toFixed(2));
 
 //Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни?//
 
